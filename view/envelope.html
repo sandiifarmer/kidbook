@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title></title>
+<link rel="stylesheet" type="text/css" href="../css/base.css">
+<link rel="stylesheet" type="text/css" href="../css/kidbook.css">
+<script src="../js/cfg.js"></script>
+<script src="../js/zepto.min.js"></script>
+</head>
+<body>
+<div class="container enve" id="container">
+	<div class="enve-top">
+		<div></div>
+		<p>中国童书博览会</p>
+	</div>
+	<div class="enve-body">
+		<p>
+			<span class="enve-red">李晓彤</span>
+			<span>的门票被糊涂的小信使放在密码箱打不开了，开箱秘籍就在你的手上，要帮他么？</span>
+			<span class="enve-heart"></span>
+		</p>
+		<a href="">使用秘籍开箱</a>
+	</div>
+	<div class="enve-num">还差2位，已经有4位帮忙开箱</div>
+	<a class="aid-btn blue scope" id="shr">分享求抢票</a>
+	<div class="tiki-btm scope">
+		<p>2015.05.28-06.01</p>
+		<p>
+			<span class="tiki-loc"></span>
+			<span>中国儿童中心</span>
+		</p>
+		<div id="tiki-qr"></div>
+	</div>
+</div>
+</body>
+<script src="../js/qrm.js"></script>
+<script>
+$("#tiki-qr").on("click", function(){
+	new Qrm();
+});
+</script>
+<script src="../js/share.js"></script>
+<script>
+$("#shr").on("click", function(){
+	new Share();
+});
+</script>
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script src="../js/wx-share.js"></script>
+<script>
+new WXShare({
+	title : "这儿的六一很精彩，我想带上小宝去看看。"
+});
+</script>
+</html>

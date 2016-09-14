@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html class="fully">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title></title>
+<link rel="stylesheet" type="text/css" href="../css/base.css">
+<link rel="stylesheet" type="text/css" href="../css/kidbook.css">
+<script src="../js/cfg.js"></script>
+<script src="../js/zepto.min.js"></script>
+<script src="../js/zepto.cookie.min.js"></script>
+</head>
+<body class="fully">
+<div class="container fully rank" id="container">
+	<div class="rank-body yscroll">
+		<div class="rank-top">
+			<div></div>
+			<p class="small">中国童书博览会</p>
+			<p>妈妈最爱的绘本推荐</p>
+			<a href="first.html" class="btn">首页</a>
+		</div>
+		<div class="rank-text scope">
+			<p>对于孩子来说，一本好绘本蕴含着巨大的成长能量。</p>
+			<p>如何给孩子一本好绘本？</p>
+			<p>又是爸爸妈妈、出版机构和出书作家、画家们共同面对的问题。</p>
+			<p class="bold">分享你最爱的绘本，真实解决“最”痛点。</p>
+		</div>
+		<a class="rank-neck" href="pie.html">看妈妈们的推荐</a>
+		<table class="scope">
+			<tr>
+				<th>推荐书名</th>
+				<th>宝宝年龄</th>
+				<th>性别</th>
+				<th>推荐理由</th>
+			</tr>
+			<tr>
+				<td><div>侦探侦探柯南侦探柯南侦探柯南侦探柯南侦探柯南柯南</div></td>
+				<td><div>3</div></td>
+				<td><div>男</div></td>
+				<td><div>锻炼逻锻炼逻辑思维锻炼逻锻炼逻辑思维锻炼逻辑思维锻炼逻辑思维锻炼逻辑思维辑思维锻炼逻锻炼逻辑思维锻炼逻辑思维锻炼逻辑思维锻炼逻辑思维辑思维锻炼逻锻炼逻辑思维锻炼逻辑思维锻炼逻辑思维锻炼逻辑思维辑思维锻炼逻辑思维锻炼逻辑思维锻炼逻辑思维辑思维</div></td>
+			</tr>
+			<tr>
+				<td><div>海贼王</div></td>
+				<td><div>16</div></td>
+				<td><div>男</div></td>
+				<td><div>培养团队精神</div></td>
+			</tr>
+			<tr>
+				<td><div>从0到1</div></td>
+				<td><div>8</div></td>
+				<td><div>男</div></td>
+				<td><div>培养宝宝创培养宝宝创业思想培养宝宝创业思想培养宝宝创业思想业思想</div></td>
+			</tr>
+			<tr>
+				<td><div>向前一步</div></td>
+				<td><div>7</div></td>
+				<td><div>女</div></td>
+				<td><div>让宝宝培养宝宝创业思想培养宝宝创业思想培养宝宝创业思想了解女性</div></td>
+			</tr>
+			<tr>
+				<td><div>三体</div></td>
+				<td><div>9</div></td>
+				<td><div>男</div></td>
+				<td><div>有宇宙培养宝宝创业思想培养宝宝创业思想培养宝宝创业思想知识</div></td>
+			</tr>
+		</table>
+	</div>
+	<div class="rank-btm">
+		<div class="scope" id="recommend">我也要推荐</div>
+	</div>
+</div>
+
+</body>
+<script src="../js/recommend.js"></script>
+<script>
+$("#recommend").on("click", function(){
+	new Recommend();
+});
+</script>
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script src="../js/wx-share.js"></script>
+<script>
+new WXShare({
+	title : "写下最爱的绘本，为孩子成长加分"
+});
+</script>
+</html>

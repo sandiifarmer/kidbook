@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html class="fully">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title></title>
+<link rel="stylesheet" type="text/css" href="../css/base.css">
+<link rel="stylesheet" type="text/css" href="../css/kidbook.css">
+<script src="../js/cfg.js"></script>
+<!-- <script src="../js/zepto.min.js"></script> -->
+<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+<script src="../js/jquery.cookie.js"></script>
+</head>
+<body class="fully">
+<div class="container fully list" id="container">	
+	<div class="list-body yscroll clearfix" id="list-body">
+		<div class="list-top">
+			<div></div>
+			<p>CCBE原创插画师集结号</p>			
+			<a href="first.html" class="btn">首页</a>
+		</div>
+		<p class="list-copyright">作品版权归原创者所有，未经授权请勿擅意使用。</p>
+		<ul id="list-left"></ul>
+		<ul id="list-right"></ul>
+		<div class="clear"></div>
+		<div class="list-more">加载更多..</div>
+	</div>
+	<div class="list-buffer"></div>
+	<div class="fixbtm">
+		<div class="twin-box scope">
+			<a class="twin-left" href="my.html">我的作品</a>
+			<div class="twin-right" id="uploader">上传作品</div>
+		</div>
+	</div>	
+</div>
+
+<input id="visitor_openid" type="hidden" value="testopenid">
+<input id="hidden_author" type="hidden" value="testauthor">
+<input id="hidden_phone"  type="hidden" value="testphone">
+<input id="headimgurl" type="hidden" value="../img/miss.jpg">
+
+</body>
+<script src="../js/jquery.form.js"></script>
+<script src="../js/uploader.js"></script>
+<script>
+$("#uploader").on("click", function(){
+	new Uploader();
+});
+</script>
+<script src="../js/render-list.js"></script>
+<script>new RenderList();</script>
+<script src="../js/album.js"></script>
+<script>new Album( ".list-pic" );</script>
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script src="../js/wx-share.js"></script>
+<script>
+new WXShare({
+	title : "中国童书博览会”原创插画师召唤中，集合！"
+});
+</script>
+</html>

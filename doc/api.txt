@@ -1,0 +1,7 @@
+http://120.27.30.128:8000/image/upload
+异步 POST
+参数 image openid
+
+http://120.27.30.128:8000/image/save
+同步 POST
+参数 imageid  author  phone

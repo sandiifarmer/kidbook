@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<html class="fully">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title></title>
+<link rel="stylesheet" type="text/css" href="../css/base.css">
+<link rel="stylesheet" type="text/css" href="../css/kidbook.css">
+<script src="../js/cfg.js"></script>
+<script src="../js/zepto.min.js"></script>
+</head>
+<body class="fully">
+<div class="container fully yscroll coop" id="container">
+	<div class="coop-top" id="coop-top">
+		<div class="coop-icon"></div>
+		<div class="coop-title">
+			<p>2015中国童书博览会</p>
+			<p style="font-size:12px;">5.28-6.1中国儿童中心（北京官园）</p>
+		</div>
+		<a href="first.html" class="btn coop-home">首页</a>
+	</div>
+	<div class="coop-down" id="coop-down">
+		<div class="coop-line scope"></div>
+		<p class="coop-tip"><span>参展报名</span></p>
+		<p class="coop-text">首次户外阅读嘉年华</p>
+		<p class="coop-text">个性独立展示空间和创意主题阅读体验馆</p>
+		<p class="coop-text">等你来约～</p>
+		<div class="coop-map">
+			<img src="../img/3dmap.jpg">
+		</div>
+		<div class="coop-join scope" id="join">我要参展</div>
+		<p class="coop-contact">媒体联络：15532156783</p>
+	</div>
+	<div class="join-box hide">
+		<div class="join-mist"></div>
+		<div class="join-cross"></div>
+		<div class="join-wrap center">
+			<p class="join-title">2015中国童书博览会</p>
+			<p class="join-title">5.28 - 6.1</p>
+			<!--<div class="join-icon">
+				<img src="../img/shoe.png">
+			</div>-->
+			<form action="http://120.27.30.128/company/save" method="post">
+				<input type="hidden" id="id" name ="id" value="">
+				<input type="hidden" id="status" value="edit">
+				<input type="text" id="company" name="company" placeholder="出版社（公司）名称">
+				<input type="text" id="phone" name="phone" placeholder="联系方式">
+				<input type="text" id="contact" name="contact" placeholder="你是谁">
+				<textarea id="intro" name="intro" placeholder="写下你可能带来的精彩内容：优质图书数目或者有趣的互动活动。博览会将帮您实现第一时间的参会宣传。"></textarea>
+				<p class="join-warn"></p>
+				<div class="join-fake">提交</div>
+				<input class="join-confirm" type="submit" onclick="return validate();">
+			</form>			
+		</div>
+	</div>
+</div>
+</body>
+<script src="../js/join.js"></script>
+<script>new Join();</script>
+<script>
+var validate = function(){
+	if(!valid("company", "公司名称")) return false;
+	if(!valid("phone", "联系方式")) return false;
+	if(!valid("contact", "您的称呼")) return false;
+	if(!valid("intro", "您输入的简介")) return false;
+	return true;
+
+	function valid(id, text){
+		var value = $("#" + id).val().replace(/(^\s*)|(\s*$)/g,"");
+		if(!value){
+			$(".join-warn").text( text + "不能为空" );
+			return false;
+		}
+		if(value.length > 20 && id != "intro"){
+			$(".join-warn").text( text + "不能多于20字" );
+			return false;
+		}
+		if(value.length > 200 && id == "intro"){
+			$(".join-warn").text( text + "不能多于200字" );
+			return false;
+		}
+		$(".join-warn").text("");
+		return true;
+	}
+};
+</script>
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script src="../js/wx-share.js"></script>
+<script>new WXShare();</script>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title></title>
+<link rel="stylesheet" type="text/css" href="../css/base.css">
+<link rel="stylesheet" type="text/css" href="../css/kidbook.css">
+<script src="../js/cfg.js"></script>
+<script src="../js/zepto.min.js"></script>
+<script src="../js/zepto.cookie.min.js"></script>
+</head>
+<body>
+<div class="container tiki" id="container">
+	<div class="tiki-top">
+		<div></div>
+		<p>中国童书博览会</p>
+		<a class="btn" href="first.html">首页</a>
+	</div>
+	<div class="tiki-tip scope">太棒了，有6位好心人帮你打开了密码箱！</div>
+	<div class="tiki-body scope">
+		<img src="../img/ticket-body.png">
+		<div class="center red" id="wx-card">点击领取</div>
+		<!-- <div class="center gray">还差2位</div> -->
+	</div>
+	<ul class="tiki-list clearfix scope">
+		<li class="clearfix">
+			<span class="tiki-icon">
+				<img src="../img/miss.jpg">
+			</span>
+			<span class="tiki-name">miss大小姐</span>
+		</li>
+		<li class="clearfix">
+			<span class="tiki-icon">
+				<img src="../img/miss.jpg">
+			</span>
+			<span class="tiki-name">miss大小姐</span>
+		</li>
+		<li class="clearfix">
+			<span class="tiki-icon">
+				<img src="../img/miss.jpg">
+			</span>
+			<span class="tiki-name">miss大小姐</span>
+		</li>
+		<li class="clearfix">
+			<span class="tiki-icon">
+				<img src="../img/miss.jpg">
+			</span>
+			<span class="tiki-name">miss大小姐</span>
+		</li>
+		<li class="clearfix">
+			<span class="tiki-icon">
+				<img src="../img/miss.jpg">
+			</span>
+			<span class="tiki-name">miss大小姐</span>
+		</li>
+	</ul>
+	<a class="aid-btn blue scope" id="shr">告知好友来抢票</a>
+	<div class="tiki-btm scope">
+		<p>2015.05.28-06.01</p>
+		<p>
+			<span class="tiki-loc"></span>
+			<span>中国儿童中心</span>
+		</p>
+		<div id="tiki-qr"></div>
+	</div>
+</div>
+<input type="hidden" id="activity_id" value="111">
+</body>
+<script src="../js/qrm.js"></script>
+<script>
+$("#tiki-qr").on("click", function(){
+	new Qrm();
+});
+</script>
+<script src="../js/share.js"></script>
+<script>
+$("#shr").on("click", function(){
+	new Share();
+});
+</script>
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script src="../js/wait.js"></script>
+<script src="../js/wx-card.js"></script>
+<script src="../js/tiki-card.js"></script>
+<script>new TikiCard({cardId : "pfdNtt2VCd-B--OsLdE3dn4yJpIc"});</script>
+<script src="../js/wx-share.js"></script>
+<script>
+new WXShare({
+	title : "这儿的六一很精彩，我想带上小宝去看看。"
+});
+</script>
+</html>

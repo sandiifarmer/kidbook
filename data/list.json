@@ -1,0 +1,49 @@
+{
+    "code": 200,
+    "data": [
+    	{
+    		"author" : "Miss大小姐",
+            "openid" : "sdfsd",
+    		"image" : "../img/22.jpg",
+    		"imageid" : "10",
+    		"likenum" : "23",
+            "liked" : false,
+    		"headimgurl" : "../img/miss.jpg"
+    	},{
+            "author" : "Miss大小姐",
+            "openid" : "sdfsd",
+            "image" : "../img/21.jpg",
+            "imageid" : "16",
+            "likenum" : "223",
+            "liked" : true,
+            "headimgurl" : "../img/miss.jpg"
+        },{
+            "author" : "Miss大小姐",
+            "openid" : "sdfsd",
+            "image" : "../img/23.jpg",
+            "imageid" : "14",
+            "likenum" : "213",
+            "liked" : false,
+            "headimgurl" : "../img/miss.jpg"
+        },{
+            "author" : "Miss大小姐",
+            "openid" : "sdfsd",
+            "image" : "../img/25.jpg",
+            "imageid" : "12",
+            "likenum" : "230",
+            "liked" : false,
+            "headimgurl" : "../img/miss.jpg"
+        },{
+            "author" : "Miss大小姐",
+            "openid" : "sdfsd",
+            "image" : "../img/24.jpg",
+            "imageid" : "3",
+            "likenum" : "2389",
+            "liked" : false,
+            "headimgurl" : "../img/miss.jpg"
+        }
+    ],
+    "pagesize": 5,
+    "pageno": 1,
+    "totalpage": 2
+}

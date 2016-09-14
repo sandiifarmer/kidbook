@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html class="fully">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title></title>
+<link rel="stylesheet" type="text/css" href="../css/base.css">
+<link rel="stylesheet" type="text/css" href="../css/kidbook.css">
+<script src="../js/cfg.js"></script>
+<script src="../js/zepto.min.js"></script>
+</head>
+<body>
+<div class="container yscroll pie" id="container">
+	<div class="coupon-top">
+		<div></div>
+		<p class="small">中国童书博览会</p>
+		<p>妈妈最爱的绘本推荐</p>
+		<a href="rank.html" class="btn">返回</a>
+	</div>
+	<div class="coupon-text">
+		<p>当前绘本推荐TOP1——</p>
+		<p class="huge">《三体黑暗森林》</p>
+	</div>
+	<div class="pie-box scope" id="pie-box"></div>
+	<div class="accept-btm scope">
+		<p>该统计完全基于本活动数据，</p>
+		<p>留下您的推荐为最爱的那本书加油吧！</p>
+		<p class="small">分享给更多妈妈，</p>
+		<p class="small">用最真实体验为孩子打造最靠谱的绘本推荐！</p>
+	</div>
+</div>
+</body>
+<script>
+window.data = [
+    {value:335, name:'从0到1'},
+    {value:310, name:'向前一步'},
+    {value:234, name:'海贼王'},
+    {value:135, name:'侦探柯南'},
+    {value:1548, name:'三体黑暗森林'},
+    {}
+]
+window.data.pop();
+</script>
+<script src="http://echarts.baidu.com/build/dist/echarts-all.js"></script>
+<script src="../js/pie.js"></script>
+<script>new Pie();</script>
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script src="../js/wx-share.js"></script>
+<script>
+new WXShare({
+	title : "写下最爱的绘本，为孩子成长加分"
+});
+</script>
+</html>

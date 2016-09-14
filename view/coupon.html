@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html class="fully">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title></title>
+<link rel="stylesheet" type="text/css" href="../css/base.css">
+<link rel="stylesheet" type="text/css" href="../css/kidbook.css">
+<script src="../js/cfg.js"></script>
+<script src="../js/zepto.min.js"></script>
+<script src="../js/zepto.cookie.min.js"></script>
+</head>
+<body class="fully">
+<div class="container fully yscroll coupon" id="container">
+	<div class="coupon-top">
+		<div></div>
+		<p class="small">中国童书博览会</p>
+		<p>妈妈最爱的绘本推荐</p>
+	</div>
+	<div class="coupon-text">
+		<p>感谢您的推荐，为您送上优惠券一张</p>
+		<p>来现场给宝宝买一本好书吧</p>
+	</div>
+	<div class="coupon-ticket scope" id="wx-card">
+		<img src="../img/coupon.png">
+	</div>
+	<div class="coupon-btm">
+		<p>该券仅限于中国童书博览会现场使用，</p>
+		<p>使用时打开“微信卡包”出示正确卡券即可</p>
+	</div>
+</div>
+<input type="hidden" id="activity_id" value="111">
+</body>
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script src="../js/wait.js"></script>
+<script src="../js/wx-card.js"></script>
+<script src="../js/coupon-card.js"></script>
+<script>new CouponCard({cardId : "pfdNtt5N1WHzQf_Luo7EyWkMwjeY"});</script>
+<script src="../js/wx-share.js"></script>
+<script>
+new WXShare({
+	title : "写下最爱的绘本，为孩子成长加分"
+});
+</script>
+</html>

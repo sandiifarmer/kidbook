@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html class="fully">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title></title>
+<link rel="stylesheet" type="text/css" href="../css/base.css">
+<link rel="stylesheet" type="text/css" href="../css/kidbook.css">
+<script src="../js/cfg.js"></script>
+<script src="../js/zepto.min.js"></script>
+</head>
+<body>
+<div class="container accept" id="container">
+	<div class="coupon-top">
+		<div></div>
+		<p class="small">中国童书博览会</p>
+		<p>妈妈最爱的绘本推荐</p>
+		<span></span>
+	</div>
+	<div class="coupon-text">
+		<p>恭喜您已成功领取优惠券～</p>
+		<p>分享给更多妈妈，</p>
+		<p>用最真实体验为孩子打造最靠谱的绘本推荐！</p>
+	</div>
+	<div class="accept-qrcode">
+		<img src="../img/qrcode.jpg">
+	</div>
+	<div class="accept-btm scope">
+		<p>中国童书博览会</p>
+		<p>2015.05.28-06.01等你来</p>
+		<p class="small">活动地址：中国儿童中心（北京车公庄地铁站B口）</p>
+	</div>
+</div>
+</body>
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script src="../js/wx-share.js"></script>
+<script>
+new WXShare({
+	title : "写下最爱的绘本，为孩子成长加分",
+	link : window.cfg.rankPage
+});
+</script>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html class="fully">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title></title>
+<link rel="stylesheet" type="text/css" href="../css/base.css">
+<link rel="stylesheet" type="text/css" href="../css/kidbook.css">
+<script src="../js/cfg.js"></script>
+<!-- <script src="../js/zepto.min.js"></script> -->
+<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+<script src="../js/jquery.cookie.js"></script>
+</head>
+<body class="fully">
+<div class="container fully list" id="container">	
+	<ul class="my-body yscroll clearfix">
+		<div class="my-top">
+			<div></div>
+			<p>CCBE原创插画师集结号</p>
+			<a href="first.html" class="btn">首页</a>
+		</div>
+		<li class="scope">
+			<div class="my-pic">
+				<img src="../img/21.jpg">
+			</div>
+			<div class="my-info">
+				<div class="my-name">Miss大小姐的插画</div>
+				<div class="my-num">2321</div>
+				<div class="my-heart"></div>
+			</div>
+		</li>
+		<li class="scope">
+			<div class="my-pic">
+				<img src="../img/23.jpg">
+			</div>
+			<div class="my-info">
+				<span class="my-name">Miss大小姐的插画</span>
+				<span class="my-num">321</span>
+				<div class="my-heart"></div>
+			</div>
+		</li>
+		<li class="scope">
+			<div class="my-pic">
+				<img src="../img/22.jpg">
+			</div>
+			<div class="my-info">
+				<div class="my-name">Miss大小姐的插画</div>
+				<div class="my-num">231</div>
+				<div class="my-heart"></div>
+			</div>
+		</li>
+		<div style="height:10px;"></div>
+		<p>分享给更多好友，it's t ime to show！</p>
+		<p>插画将于5.28-6.1中国图书博览会现场展出，</p>
+		<p class="my-bold">邀请好友一起加入吧</p>
+	</ul>
+	<div class="fixbtm">
+		<div class="btm-btn" id="uploader">上传作品</div>
+	</div>	
+</div>
+<input id="visitor_openid" type="hidden" value="testopenid">
+<input id="hidden_author" type="hidden" value="testauthor">
+<input id="hidden_phone"  type="hidden" value="testphone">
+<input id="headimgurl" type="hidden" value="../img/miss.jpg">
+</body>
+<script src="../js/jquery.form.js"></script>
+<script src="../js/uploader.js"></script>
+<script>
+$("#uploader").on("click", function(){
+	new Uploader();
+});
+</script>
+<script src="../js/album.js"></script>
+<script>new Album( ".my-pic" );</script>
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script src="../js/wx-share.js"></script>
+<script>
+;(function(){
+var el = $(".my-name")[0];
+if(el){
+	var name = $(el).text().split("的插画")[0],
+		title = name + "刚刚登上“中国童书博览会原创插画师集结号”，下一个会是你么？";
+}else{
+	var title = "中国童书博览会”原创插画师召唤中，集合！";
+}
+new WXShare({ title : title });
+})();
+</script>
+</html>

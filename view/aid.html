@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title></title>
+<link rel="stylesheet" type="text/css" href="../css/base.css">
+<link rel="stylesheet" type="text/css" href="../css/kidbook.css">
+<script src="../js/cfg.js"></script>
+<script src="../js/zepto.min.js"></script>
+</head>
+<body>
+<div class="container aid" id="container">
+	<div class="aid-top">
+		<div></div>
+		<p>中国童书博览会</p>
+	</div>
+	<div class="aid-tip scope">已经有4位好人心送上开箱秘籍，还有2位帮忙就可以拿到CCBE门票！快去问问还有谁有开箱秘籍吧！</div>
+	<a class="aid-btn red scope" id="shr">继续发到群里请好友帮忙</a>
+	<a class="aid-btn blue scope" href="summon.html">我也要抢门票</a>
+	<ul class="tiki-list clearfix scope">
+		<li class="clearfix">
+			<span class="tiki-icon">
+				<img src="../img/miss.jpg">
+			</span>
+			<span class="tiki-name">miss大小姐</span>
+		</li>
+		<li class="clearfix">
+			<span class="tiki-icon">
+				<img src="../img/miss.jpg">
+			</span>
+			<span class="tiki-name">miss大小姐</span>
+		</li>
+		<li class="clearfix">
+			<span class="tiki-icon">
+				<img src="../img/miss.jpg">
+			</span>
+			<span class="tiki-name">miss大小姐</span>
+		</li>
+		<li class="clearfix">
+			<span class="tiki-icon">
+				<img src="../img/miss.jpg">
+			</span>
+			<span class="tiki-name">miss大小姐</span>
+		</li>
+		<li class="clearfix">
+			<span class="tiki-icon">
+				<img src="../img/miss.jpg">
+			</span>
+			<span class="tiki-name">miss大小姐</span>
+		</li>
+	</ul>
+	<div class="tiki-btm scope">
+		<p>2015.05.28-06.01</p>
+		<p>
+			<span class="tiki-loc"></span>
+			<span>中国儿童中心</span>
+		</p>
+		<div id="tiki-qr"></div>
+	</div>
+</div>
+</body>
+<script src="../js/qrm.js"></script>
+<script>
+$("#tiki-qr").on("click", function(){
+	new Qrm();
+});
+</script>
+<script src="../js/share.js"></script>
+<script>
+$("#shr").on("click", function(){
+	new Share();
+});
+</script>
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script src="../js/wx-share.js"></script>
+<script>
+new WXShare({
+	title : "这儿的六一很精彩，我想带上小宝去看看。"
+});
+</script>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html class="fully">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title></title>
+<link rel="stylesheet" type="text/css" href="../css/base.css">
+<link rel="stylesheet" type="text/css" href="../css/kidbook.css">
+<script src="../js/cfg.js"></script>
+<!-- <script src="../js/zepto.min.js"></script> -->
+<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+<script src="../js/jquery.cookie.js"></script>
+</head>
+<body>
+<div class="container gather" id="container">
+	<div class="gather-top">
+		<div></div>
+		<p>CCBE原创插画师集结号</p>
+		<a href="list.html" class="btn">围观作品</a>
+	</div>
+	<div class="gather-body scope">
+		<p>诚挚邀请用画笔讲故事的你</p>
+		<p>走进出版大咖的世界</p>
+		<p>5.28-6.1还将落地博览会现场</p>
+		<div></div>
+		<span id="qrcode">联系主办方</span>
+	</div>
+	<div class="twin-box scope">
+		<a class="twin-left" href="my.html">我的作品</a>
+		<div class="twin-right" id="uploader">上传作品</div>
+	</div>
+	<div class="btm scope">
+		<p>2015中国童书博览会</p>
+		<p class="small">向原创致敬</p>
+	</div>
+</div>
+
+<input id="visitor_openid" type="hidden" value="testopenid">
+<input id="hidden_author" type="hidden" value="testauthor">
+<input id="hidden_phone"  type="hidden" value="testphone">
+<input id="headimgurl" type="hidden" value="../img/miss.jpg">
+
+</body>
+<script src="../js/qrcode.js"></script>
+<script>
+$("#qrcode").on("click", function(){
+	new Qrcode();
+});
+</script>
+<script src="../js/jquery.form.js"></script>
+<script src="../js/uploader.js"></script>
+<script>
+$("#uploader").on("click", function(){
+	new Uploader();
+});
+</script>
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script src="../js/wx-share.js"></script>
+<script>
+new WXShare({
+	title : "中国童书博览会”原创插画师召唤中，集合！"
+});
+</script>
+</html>
